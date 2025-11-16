@@ -10,11 +10,16 @@ import {
   withEventReplay,
 } from '@angular/platform-browser';
 
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { providePrimeNG } from 'primeng/config';
+
 export const appConfig: ApplicationConfig = {
   providers: [
     provideClientHydration(withEventReplay()),
     provideBrowserGlobalErrorListeners(),
     provideZoneChangeDetection({ eventCoalescing: true }),
     provideRouter(appRoutes),
+    provideAnimationsAsync(),
+    providePrimeNG({})
   ],
 };
