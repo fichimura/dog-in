@@ -1,4 +1,19 @@
-// colors
-// B00000
-// 808080
-// FFFFFF
+.home__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .home__main__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        .image__dog {
+            height: 300px;
+            width: 300px;
+        }
+    }
+}
+
+
+
